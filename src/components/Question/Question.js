@@ -1,5 +1,7 @@
 import Option from '../Option/Option';
-import './Question.css'
+import './Question.css';
+
+
 
 const Question = ({questions}) => {
    
@@ -11,12 +13,18 @@ const Question = ({questions}) => {
         }
         else{
             alert('Wrong Answer')
-        }
-        
+        }  
+    }
+
+    const handleEyeAns=()=>{
+        alert(`Correct Answer: ${correctAnswer}`)
     }
     return (
         <div className='question-container'>
+            <div className='question-eye-icon'>
             <h4>Quiz {question}</h4>
+            <i onClick={()=>handleEyeAns()} class="fa-solid fa-eye"></i>
+            </div>
             <div className='option-container'>
             {
                 options.map((option, index) => <Option
@@ -26,6 +34,7 @@ const Question = ({questions}) => {
                 ></Option>)
             }
             </div>
+
         </div>
     );
 };

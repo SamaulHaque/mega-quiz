@@ -9,3 +9,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
+.question-eye-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
