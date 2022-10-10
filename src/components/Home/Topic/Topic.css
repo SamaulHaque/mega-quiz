@@ -1,0 +1,22 @@
+.topic-container{
+    border: 1px solid gray;
+}
+.topic-container img{
+    margin: 0px;
+    width: 100%;
+    background: rgb(172, 170, 170);
+    border-radius: 5px;
+}
+.topic-info-container{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.topic-info-container h5{
+    margin: 0px;
+}
+.topic-info-container button{
+    padding: 5px 10px;
+}

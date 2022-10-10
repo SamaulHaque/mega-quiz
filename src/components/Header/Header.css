@@ -1,0 +1,27 @@
+.nav-container{
+    background-color: gray;
+}
+.header-container{
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+}
+
+.header a{
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.header a:hover{
+    color: aqua;
+    background: rgb(81, 79, 79);
+}
+.active{
+    background: rgb(81, 79, 79);
+}
