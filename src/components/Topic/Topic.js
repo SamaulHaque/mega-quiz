@@ -1,16 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Topic.css'
 
 const Topic = ({ topic }) => {
-    console.log(topic)
-    const { logo, name, total } = topic;
+    const {id, logo, name, total } = topic;
+    
     return (
         <div className='topic-container'>
                <img src={logo} alt="" />;
             <div className='topic-info-container'>
                 <h5>{name}</h5>
-                <h5>Total Quiz: {total}</h5>
-                <button>Start</button>
+                <h5>Quiz: {total}</h5>
+                <Link to={`/home/${id}`}>
+                <button>Start Quiz</button>
+                </Link>
             </div>
             
         </div>

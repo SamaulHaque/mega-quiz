@@ -1,5 +1,6 @@
 .topic-container{
     border: 1px solid gray;
+    border-radius: 5px;
 }
 .topic-container img{
     margin: 0px;
@@ -8,9 +9,9 @@
     border-radius: 5px;
 }
 .topic-info-container{
-    margin: 0px;
-    padding: 0px;
+    padding: 10px 2px;
     display: flex;
+    align-items: center;
     gap: 10px;
     justify-content: space-between;
 }

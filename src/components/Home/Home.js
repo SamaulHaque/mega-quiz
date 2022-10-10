@@ -2,12 +2,11 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import image from './banner-image.jpg'
 import './Home.css'
-import Topic from './Topic/Topic';
+import Topic from '../Topic/Topic';
 
 const Home = () => {
     const allTopics= useLoaderData();
     const topics=allTopics.data;
-    console.log(topics);
     return (
         <div>
             <header className='header'>
@@ -16,7 +15,10 @@ const Home = () => {
             </header>
             <div className='topics-container'>
             {
-                topics.map(topic => <Topic topic={topic}></Topic>)
+                topics.map(topic => <Topic 
+                    topic={topic}
+                    key={topic.id}
+                    ></Topic>)
             }
             </div>
         </div>
