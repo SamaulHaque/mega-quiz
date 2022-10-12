@@ -17,4 +17,3 @@ This project link [MEGA QUIZ](https://mega-quiz-webapp.netlify.app).
 ### Full website make responsive and deploy in netlify.
 
 
-### `npm run build` fails to minify
