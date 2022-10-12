@@ -1,25 +1,29 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Quiz from '../Quiz/Quiz';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,} from 'recharts';
+import './Statistics.css'
+
+
 
 const Statistics = () => {
-    const allQuiz= useLoaderData();
-    const quizData=allQuiz.data;
-
-    const names=quizData.map(quiz => quiz.name)
+  const allQuiz = useLoaderData();
+  const data = allQuiz.data;
     
-    for(const name of names)
-    console.log(names)
-    
-    const totals=quizData.map(quiz => quiz.total)
-    for(const total of totals)
-    console.log(total)
     return (
-        <div>
-            {
-                
-            }
-        </div>
+      <LineChart className='chart'
+      width={500}
+      height={300}
+      data={data}
+      >
+      <CartesianGrid strokeDasharray="3 3" />
+      <XAxis dataKey="name" />
+      <YAxis />
+      <Tooltip />
+      <Legend />
+      <Line type="monotone" dataKey="total" stroke="#8884d8" activeDot={{ r: 8 }} />
+    </LineChart>
+   
+    
     );
 };
 

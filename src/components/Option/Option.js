@@ -2,13 +2,12 @@ import React from 'react';
 import './Option.css'
 
 const Option = ({option, handleOption}) => {
+    console.log(option)
     return (
-        <div className='option'>
-            <div onClick={()=>handleOption(option)}>
-            <input type="radio" name="ot" id="op" />
-            <label htmlFor="op" >{option}</label>
-            </div>
-        </div>
+        
+        <label className='option'><input onClick={()=>handleOption(option)} name='nam' type="radio" /> {option}</label>
+            
+        
     );
 };
 
