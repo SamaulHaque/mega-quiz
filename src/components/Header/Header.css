@@ -1,5 +1,5 @@
 .nav-container{
-    background-color: gray;
+    background-color: #1E1E1E;
     padding: 10px;
 }
 .header-container{
@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: #c7c0c0;
     gap: 10px;
     
 }
@@ -17,7 +17,7 @@
     margin-right: 15px;
     padding: 8px 15px;
     border-radius: 5px;
-    color: white;
+    color: #c7c0c0;
     font-weight: bold;
 }
 .header a:hover{

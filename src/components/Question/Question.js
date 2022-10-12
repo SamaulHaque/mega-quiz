@@ -27,7 +27,7 @@ const Question = ({questions}) => {
         <div className='question-container'>
             <div className='question-eye-icon'>
             <h4>Quiz {question}</h4>
-            <i onClick={()=>handleEyeAns()} class="fa-solid fa-eye"></i>
+            <i onClick={()=>handleEyeAns()} class="fa-solid fa-eye eye"></i>
             </div>
             <div className='option-container'>
             {

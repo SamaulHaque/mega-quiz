@@ -5,7 +5,7 @@
 .topic-container img{
     margin: 0px;
     width: 100%;
-    background: rgb(172, 170, 170);
+    background-color: #1E1E1E;
     border-radius: 5px;
 }
 .topic-info-container{
@@ -14,10 +14,21 @@
     align-items: center;
     gap: 10px;
     justify-content: space-between;
+    color: rgb(86, 126, 4);
 }
 .topic-info-container h5{
     margin: 0px;
 }
-.topic-info-container button{
-    padding: 5px 10px;
+
+.start-btn{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #e0c3c3;
+    font-weight: bold;
+    background-color: rgb(81, 79, 79);
+}
+.start-btn:hover{
+    background-color: #1E1E1E;
+    color: #e0c6c6;
 }
