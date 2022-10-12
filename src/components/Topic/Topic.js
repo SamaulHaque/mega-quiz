@@ -7,7 +7,7 @@ const Topic = ({ topic }) => {
     
     return (
         <div className='topic-container'>
-               <img src={logo} alt="" />;
+               <img src={logo} alt="" />
             <div className='topic-info-container'>
                 <h5>{name}</h5>
                 <h5>Quiz: {total}</h5>
