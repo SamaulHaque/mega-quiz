@@ -7,9 +7,10 @@ import Topic from '../Topic/Topic';
 const Home = () => {
     const allTopics= useLoaderData();
     const topics=allTopics.data;
+    console.log(topics)
     return (
         <div>
-            <header className='header'>
+            <header className='home-header'>
                 <img src={image} alt="" />
                 <h3>Playing Quiz Online is a unique and fun way to engage the learners. It does not matter at what kind of location the learners can play quiz online as long as they have access to the internet.</h3>
             </header>
