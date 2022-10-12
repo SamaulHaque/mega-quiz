@@ -1,6 +1,6 @@
 # Getting Started with MEGA QUIZ
 
-This project link [MEGA QUIZ](https://mega-quiz-webapp.netlify.app/home).
+This project link [MEGA QUIZ](https://mega-quiz-webapp.netlify.app).
 
 ## At first create Mega Quiz file by command line. Then install react router.
 
