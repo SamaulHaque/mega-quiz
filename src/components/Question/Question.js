@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify';
 import Option from '../Option/Option';
 import './Question.css';
 
@@ -9,15 +10,18 @@ const Question = ({questions}) => {
 
     const handleOption= option => {
         if(correctAnswer === option){
-            alert('Correct Answer')
+            // alert('Correct Answer')
+            toast.success('Correct Answer', {autoClose: 500})
         }
         else{
-            alert('Wrong Answer')
+            // alert('Wrong Answer')
+            toast.error('Wrong Answer', {autoClose: 500})
         }  
     }
 
     const handleEyeAns=()=>{
-        alert(`Correct Answer: ${correctAnswer}`)
+        // alert(`Correct Answer: ${correctAnswer}`)
+        toast.info(`Correct Answer: ${correctAnswer} `, {autoClose: 700})
     }
     return (
         <div className='question-container'>
