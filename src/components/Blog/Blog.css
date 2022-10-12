@@ -1,3 +1,10 @@
 .blog{
+   
+    margin: 20px;
+}
+.blog h2{
     text-align: left;
+}
+.blog p{
+    text-align: justify;
 }
